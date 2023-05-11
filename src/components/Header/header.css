@@ -1,0 +1,6 @@
+header{
+
+}
+.infoBar{
+    @apply h-12 bg-btb-yellow text-btb-blue font-normal text-sm
+}

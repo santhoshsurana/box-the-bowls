@@ -1,0 +1,7 @@
+footer h2{
+    @apply text-xl font-semibold text-btb-blue py-2
+}
+
+footer li {
+    @apply text-base pl-4 py-1 font-medium text-btb-blue/80
+}
