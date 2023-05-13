@@ -1,25 +1,25 @@
 
 nav ul{
-    @apply flex py-8
+    @apply flex 
 }
 nav ul li a{
-    @apply px-4 py-4 text-btb-blue font-semibold text-lg 
+    @apply  p-4 text-btb-blue font-semibold text-lg 
 }
 nav ul li .active{
     @apply border-b-4 border-btb-yellow
 }
 nav ul li {
-    @apply  py-4 px-1 
+    @apply p-4
 }
 
 .mobile-menu{
-    @apply fixed bg-white w-full h-screen z-50
+    @apply fixed bg-white w-full h-screen top-0 left-0
 }
 
-.mobile-menu nav ul {
-    @apply flex flex-col py-0 px-4
+.mobile-menu  ul {
+    @apply flex flex-col text-center
 }
 
-.mobile-menu nav ul li{
-    @apply hover:bg-btb-blue/20
+.mobile-menu ul li{
+    @apply hover:bg-btb-blue/10 
 }

@@ -7,9 +7,9 @@ const About = () => {
     return (
         <>
             <section className="max-w-6xl mx-auto">
-                <div className="w-full mx-auto mt-28 md:pb-20 ">
-                    <div className="items-stretch justify-between flex flex-col-reverse md:flex-row-reverse">
-                        <div className="md:w-1/2 w-full md:p-0 px-6 pt-4 md:pl-8">
+                <div className="w-full mx-auto md:mt-28 mt-4 md:pb-20 ">
+                    <div className="items-stretch justify-between flex flex-col md:flex-row-reverse">
+                        <div className="md:w-1/2 w-full md:p-0 px-6 py-4 md:pl-8">
                             <h2 className="mb-6 text-3xl font-bold text-dark sm:text-4xl sm:leading-snug 2xl:text-[40px] tracking-tight text-btb-blue" >All About <span className="text-btb-yellow">Box the Bowls</span></h2>
                             <p className="mb-9 text-base leading-relaxed text-justify text-gray-600 font-normal  " data-content="about-us">At Box the Bowls, we're passionate about delivering healthy, delicious food bowls right to your doorstep. Our mission is to provide our customers with convenient, cost-effective meal options that are prepared with care and attention to detail.</p>
                             <p className="mb-9 text-base leading-relaxed text-justify text-gray-600 font-normal" data-content="about-us">Our food bowls are made with fresh, high-quality ingredients that are carefully selected to ensure maximum flavor and nutrition. We offer a variety of options to suit every taste and dietary preference, from hearty meat-based bowls to fresh, vibrant vegan options.</p>

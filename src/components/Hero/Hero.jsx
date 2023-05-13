@@ -25,7 +25,7 @@ import './hero.css'
 const Hero = () => {
     return (
         <>
-            <section className='w-full mx-auto'>
+            <section className='w-full mx-auto mt-2 -z-10'>
                 <Swiper
                     style={{
                         "--swiper-navigation-color": "#3a4a5a",
@@ -39,7 +39,7 @@ const Hero = () => {
                     pagination={{
                         clickable: true,
                     }}
-                    navigation={true}
+                    
                     modules={[Pagination, Navigation, Autoplay]}
                     className=''
                 >

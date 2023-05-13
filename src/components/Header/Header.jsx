@@ -1,10 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 //icons 
 import { IoMail } from 'react-icons/io5';
 import { FaPhoneSquareAlt, FaFacebookSquare, FaTwitterSquare, FaInstagramSquare, FaWhatsappSquare } from 'react-icons/fa';
 import { BsFillClockFill } from 'react-icons/bs';
 
+import logo from '../../assets/images/logo.webp'
 
 import Navbar from '../Navbar/Navbar'
 
@@ -14,9 +16,10 @@ import './header.css'
 const Header = () => {
     return (
         <>
-            <header>
+            <header className='lg:mb-0 mb-24'>
                 <div className="infoBar hidden lg:block">
                     <div className="md:max-w-6xl  mx-auto flex justify-between">
+                    <Link to='/'><img src={logo} alt="" className='py-2 h-[108px] bg-white shadow-lg' /></Link>
                         <p className='py-3 flex'>
                             <IoMail size={20} />
                             <span className='px-2'>info@boxthebowls.com</span>
@@ -25,7 +28,7 @@ const Header = () => {
                             <BsFillClockFill size={20} />
                             <span className='px-2'>Monday - Sat 09:00 AM to 06:00 PM, Sunday Closed</span>
                         </p>
-                        <p className='flex bg-white'>
+                        <p className='flex bg-white h-12'>
                             <a href="https://www.facebook.com" aria-label='facebook link' className='p-2  text-blue-800/90 '>
                                 <FaFacebookSquare className='hover:animate-bounce'  size={32}/>
                             </a>

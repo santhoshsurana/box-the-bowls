@@ -13,17 +13,20 @@ const Footer = () => {
       <footer className='mt-8'>
         <div className='bg-btb-blue/10 p-4 lg:p-8'>
           <div className='md:mx-auto max-w-6xl flex md:flex-row flex-col '>
-            <div className='flex md:w-3/6 md:flex-row flex-col'>
-              <img src={logo} alt="" className='md:h-32' />
-              <div className='md:px-6 text-center md:text-left py-4'>
-                <p>24, Ashok Nagar, Golden Habitat, </p>
-                <p>Whitefields, Kondapur, Telangana 500084, India</p>
-                <p>boxthebowls@Gmail.com</p>
-                <p>+91 93906 80414</p>
-                <div className='py-8'>
-                  <input type="email" name="" id=""  className=' rounded-tl-xl rounded-bl-xl border-l border-b border-t border-btb-yellow px-4 py-2'/>
-                  <button className='rounded-tr-xl rounded-br-xl bg-btb-yellow  text-btb-blue font-medium border border-btb-yellow px-4 py-2'>subscribe</button>
+            <div className='md:w-3/6 flex flex-col'>
+              <div className='flex flex-row'>
+                <img src={logo} alt="" className='w-32' />
+                <div className='md:px-6 text-center md:text-left py-4'>
+                  <p>24, Ashok Nagar, Golden Habitat, </p>
+                  <p>Whitefields, Kondapur, Telangana 500084, India</p>
+                  <p>boxthebowls@gmail.com</p>
+                  <p>+91 93906 80414</p>
                 </div>
+              </div>
+              <div className='py-8'>
+                <input type="email" name="" id="" className=' rounded-tl-xl rounded-bl-xl border-l border-b border-t border-btb-yellow px-4 py-2 w-3/5' />
+                <button className='rounded-tr-xl rounded-br-xl bg-btb-yellow  text-white font-medium border border-btb-yellow px-4 py-2'><span className='drop-shadow-lg'>subscribe</span></button>
+                <p className='text-sm p-2 w-4/5 text-btb-blue/70'>Subscribe to our newsletter and stay up-to-date on all of our latest food bowl offerings, promotions, and special deals.</p>
               </div>
             </div>
             <div className='md:w-1/6 mx-auto text-center'>
@@ -62,8 +65,9 @@ const Footer = () => {
         </div>
         <div className='bg-btb-blue'>
           <div className='max-w-6xl mx-auto flex flex-col lg:flex-row justify-between text-white font-normal'>
-            <p className='py-4 text-center '> &copy; 2023 Copyrights reserved to  <a href="https://www.boxthebowls.com" className='text-btb-yellow font-medium'>Box the Bowls</a>, Hyderabad. </p>
-            <p className='py-4  flex mx-auto md:mx-0'>
+            <p className='p-4 text-center '> &copy; 2023 Copyrights reserved to  <a href="https://www.boxthebowls.com" className='text-btb-yellow font-medium'>Box the Bowls</a>, Hyderabad. </p>
+            
+            <p className='p-4 flex mx-auto lg:mx-0'>
               Designed with <span className='px-2'>
                 <BsChatHeartFill size={24} className='text-red-600' />
               </span> by
