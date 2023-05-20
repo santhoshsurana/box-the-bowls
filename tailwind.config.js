@@ -5,6 +5,14 @@ module.exports = {
   darkMode: 'media', // or 'class'
   theme: {
     extend: {
+      fontFamily:{
+        
+      },
+      backgroundImage: {
+        'about': "url('/src/assets/images/about_bg.webp')",
+        'about-mini': "url('/src/assets/images/about_mini.webp')",
+        'menu': "url('/src/assets/images/menu.webp')",
+      },
       colors: {
         btb: {
           yellow: '#ff8822',

@@ -5,21 +5,26 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode } from "swiper";
 
 
+import { GiFullPizza, GiBowlOfRice, GiNoodles, GiChickenLeg, GiTacos, GiMeal } from 'react-icons/gi';
+import { TbMilkshake, TbSalad } from 'react-icons/tb';
+import { BiBowlRice } from 'react-icons/bi';
+
+
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";
 
 
 
-import image1 from '../../assets/images/image-1-min.webp'
-import image2 from '../../assets/images/image-2-min.webp'
-import image3 from '../../assets/images/image-3-min.webp'
-import image4 from '../../assets/images/image-4-min.webp'
-import image5 from '../../assets/images/image-5-min.webp'
-import image6 from '../../assets/images/image-6-min.webp'
-import image7 from '../../assets/images/image-7-min.webp'
-import image8 from '../../assets/images/image-8-min.webp'
-import image9 from '../../assets/images/image-9-min.webp'
+// import image1 from '../../assets/images/image-1-min.webp'
+// import image2 from '../../assets/images/image-2-min.webp'
+// import image3 from '../../assets/images/image-3-min.webp'
+// import image4 from '../../assets/images/image-4-min.webp'
+// import image5 from '../../assets/images/image-5-min.webp'
+// import image6 from '../../assets/images/image-6-min.webp'
+// import image7 from '../../assets/images/image-7-min.webp'
+// import image9 from '../../assets/images/image-9-min.webp'
 
 //import stylesheets 
 import './menu.css'
@@ -27,73 +32,63 @@ import './menu.css'
 function Menu() {
     return (
         <>
-            <section className="max-w-6xl mx-auto ">
+            <section className="bg-menu bg-cover">
                 <div className="pb-16 mx-auto -z-10">
-                    <div className="mb-10  sm:text-center p-5  md:mb-12">
-                        <h2 className=" mb-5 font-sans text-3xl font-bold leading-none tracking-tight text-btb-blue sm:text-4xl border-b-4 w-48 mx-auto border-btb-yellow p-2" >Our Menu</h2>
-                        <p className="text-base text-gray-700 max-w-6xl mx-auto   md:text-lg text-justify" data-content="product-descriptions">we offer a variety of delicious food bowl options to suit every taste and dietary preference. Our bowls are made with fresh, high-quality ingredients that are carefully selected to ensure maximum flavor and nutrition. Whether you're in the mood for a hearty meat-based bowl or a fresh, vibrant vegan option, we've got you covered. Plus, with real-time food prep updates through WhatsApp, you'll always know exactly when your meal is on its way. Check out our menu below to explore all of our tasty offerings!</p>
+                    <div className="sm:text-center p-5 ">
+                        <h2 className="font-sans text-3xl font-bold text-center text-white sm:text-4xl   p-2" ><span className="border-btb-yellow border-b-4">Our Menu</span></h2>
+                        {/* <p className="text-base text-white max-w-6xl mx-auto   md:text-lg text-justify" data-content="product-descriptions">we offer a variety of delicious food bowl options to suit every taste and dietary preference. Our bowls are made with fresh, high-quality ingredients that are carefully selected to ensure maximum flavor and nutrition. Whether you're in the mood for a hearty meat-based bowl or a fresh, vibrant vegan option, we've got you covered. Plus, with real-time food prep updates through WhatsApp, you'll always know exactly when your meal is on its way. Check out our menu below to explore all of our tasty offerings!</p> */}
                     </div>
-                    <Swiper
-                        autoplay = {true}
-                        speed={600}
-                        centeredSlides={false}
-                        spaceBetween={10}
-                        freeMode={true}
-                        breakpoints={{
-                            // when window width is >= 640px
-                            640: {
-                              slidesPerView: 1,
-                            },
-                            // when window width is >= 768px
-                            768: {
-                              slidesPerView: 2,
-                            },
-                            // when window width is >= 1024px
-                            1024: {
-                              slidesPerView: 4,
-                            },
-                          }}
-                        loop = {true}
-                        modules={[FreeMode, Autoplay]}
-                        className=""
-                    >
-                        <SwiperSlide><div className=" bg-btb-yellow  rounded p-4  aspect-square  shadow-lg m-4">
-                            <img className="mx-auto" src={image1} alt="" />
-                            <h3 className='font-medium relative -mt-14 p-2 bg-btb-blue text-md text-white drop-shadow-lg py-4'>Rice Bowls</h3>
-                        </div></SwiperSlide>
-                        <SwiperSlide><div className=" bg-btb-yellow  rounded  aspect-square  shadow-lg m-4">
-                            <img className="mx-auto" src={image2} alt="" />
-                            <h3 className='font-bold text-xl text-white drop-shadow-lg py-4 text-center'>Chinese Bowls</h3>
-                        </div></SwiperSlide>
-                        <SwiperSlide><div className=" bg-btb-yellow  rounded  aspect-square  shadow-lg m-4">
-                            <img className="mx-auto" src={image3} alt="" />
-                            <h3 className='font-bold text-xl text-white drop-shadow-lg py-4 text-center'>Starters</h3>
-                        </div></SwiperSlide>
-                        <SwiperSlide><div className=" bg-btb-yellow  rounded  aspect-square  shadow-lg m-4">
-                            <img className="mx-auto" src={image4} alt="" />
-                            <h3 className='font-bold text-xl text-white drop-shadow-lg py-4 text-center'>Deserts</h3>
-                        </div></SwiperSlide>
-                        <SwiperSlide><div className=" bg-btb-yellow  rounded  aspect-square  shadow-lg m-4">
-                            <img className="mx-auto" src={image5} alt="" />
-                            <h3 className='font-bold text-xl text-white drop-shadow-lg py-4 text-center'>Deserts</h3>
-                        </div></SwiperSlide>
-                        <SwiperSlide><div className=" bg-btb-yellow  rounded  aspect-square  shadow-lg m-4">
-                            <img className="mx-auto" src={image6} alt="" />
-                            <h3 className='font-bold text-xl text-white drop-shadow-lg py-4 text-center'>Deserts</h3>
-                        </div></SwiperSlide>
-                        <SwiperSlide><div className=" bg-btb-yellow  rounded  aspect-square  shadow-lg m-4">
-                            <img className="mx-auto" src={image7} alt="" />
-                            <h3 className='font-bold text-xl text-white drop-shadow-lg py-4 text-center'>Deserts</h3>
-                        </div></SwiperSlide>
-                        <SwiperSlide><div className=" bg-btb-yellow  rounded  aspect-square  shadow-lg m-4">
-                            <img className="mx-auto" src={image8} alt="" />
-                            <h3 className='font-bold text-xl text-white drop-shadow-lg py-4 text-center'>Deserts</h3>
-                        </div></SwiperSlide>
-                        <SwiperSlide><div className=" bg-btb-yellow  rounded  aspect-square  shadow-lg m-4">
-                            <img className="mx-auto" src={image9} alt="" />
-                            <h3 className='font-bold text-xl text-white drop-shadow-lg py-4 text-center'>Deserts</h3>
-                        </div></SwiperSlide>
-                    </Swiper>
+
+                    <div className=" grid md:grid-cols-4 grid-cols-2 gap-4 max-w-6xl mx-auto">
+                    <div className=" bg-white   rounded-3xl w-42 shadow-lg ">
+                            <a href="https://boxthebowls.dotpe.in/store/1/delivery#643316">
+                                <GiFullPizza size={140} className="mx-auto px-4 text-btb-yellow"></GiFullPizza>
+                                <h3 className='font-bold text-center text-xl text-slate-900 uppercase drop-shadow-lg py-4'>Pizza</h3>
+                            </a>
+                        </div>
+                        <div className=" bg-white   rounded-3xl w-42 shadow-lg ">
+                            <a href="https://boxthebowls.dotpe.in/store/1/delivery#643315">
+                                <BiBowlRice size={140} className="mx-auto px-4 text-btb-yellow"></BiBowlRice>
+                                <h3 className='font-bold text-center text-xl text-slate-900 uppercase drop-shadow-lg py-4'>Kichidi</h3>
+                            </a>
+                        </div>
+                        <div className=" bg-white   rounded-3xl w-42 shadow-lg ">
+                            <a href="https://boxthebowls.dotpe.in/store/1/delivery#643313">
+                                <GiMeal size={140} className="mx-auto px-4 text-btb-yellow"></GiMeal>
+                                <h3 className='font-bold text-center text-xl text-slate-900 uppercase drop-shadow-lg py-4'>Andhra Meals</h3>
+                            </a>
+                        </div>
+                        <div className=" bg-white  rounded-3xl w-42 shadow-lg ">
+                            <a href="https://boxthebowls.dotpe.in/store/1/delivery#643314">
+                                <GiTacos size={140} className="mx-auto px-4 text-btb-yellow"></GiTacos>
+                                <h3 className='font-bold text-center text-xl text-slate-900 uppercase drop-shadow-lg py-4'>Wraps</h3>
+                            </a>
+                        </div>
+                        <div className=" bg-white  rounded-3xl w-42 shadow-lg ">
+                            <a href="https://boxthebowls.dotpe.in/store/1/delivery#643310">
+                                <TbMilkshake size={140} className="mx-auto px-4 text-btb-yellow"></TbMilkshake>
+                                <h3 className='font-bold text-center text-xl text-slate-900 uppercase drop-shadow-lg py-4'>Buttermilks</h3>
+                            </a>
+                        </div>
+                        <div className=" bg-white  rounded-3xl w-42 shadow-lg ">
+                            <a href="https://boxthebowls.dotpe.in/store/1/delivery#643317">
+                                <GiChickenLeg size={140} className="mx-auto px-4 text-btb-yellow"></GiChickenLeg>
+                                <h3 className='font-bold text-center text-xl text-slate-900 uppercase drop-shadow-lg py-4'>Non Veg Starter</h3>
+                            </a>
+                        </div>
+                        <div className=" bg-white  rounded-3xl w-42 shadow-lg ">
+                            <a href="https://boxthebowls.dotpe.in/store/1/delivery#643318">
+                                <TbSalad size={140} className="mx-auto px-4 text-btb-yellow"></TbSalad>
+                                <h3 className='font-bold text-center text-xl text-slate-900 uppercase drop-shadow-lg py-4'>Veg Starter</h3>
+                            </a>
+                        </div>
+                        <div className=" bg-white  rounded-3xl w-42 shadow-lg ">
+                            <a href="https://boxthebowls.dotpe.in/store/1/delivery#643312">
+                                <GiBowlOfRice size={140} className="mx-auto px-4 text-btb-yellow"></GiBowlOfRice>
+                                <h3 className='font-bold text-center text-xl text-slate-900 uppercase drop-shadow-lg py-4'>Rice Bowls</h3>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
         </>

@@ -16,7 +16,7 @@ import './header.css'
 const Header = () => {
     return (
         <>
-            <header className='lg:mb-0 mb-24'>
+            <header className='lg:mb-0 mb-16'>
                 <div className="infoBar hidden lg:block">
                     <div className="md:max-w-6xl  mx-auto flex justify-between">
                     <Link to='/'><img src={logo} alt="" className='py-2 h-[108px] bg-white shadow-lg' /></Link>

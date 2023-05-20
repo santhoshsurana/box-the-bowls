@@ -4,7 +4,7 @@ import React from 'react'
 const Contact = () => {
     return (
         <>
-            <section className="text-gray-600 mx-auto max-w-6xl body-font relative -z-10">
+            <section id='contact' className="text-gray-600 mx-auto max-w-6xl body-font relative -z-10">
                 <div className="container p-5 md:py-16 mx-auto flex sm:flex-nowrap flex-wrap">
                     <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
                         <iframe width="100%" height="100%" className="absolute inset-0" frameBorder={0} title="map" marginHeight={0} marginWidth={0} scrolling="no" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=24,+Ashok+Nagar,+Golden+Habitat,++Whitefields,+Kondapur,+Telangana+500084,+India&ie=UTF8&t=&z=14&iwloc=B&output=embed" style={{ filter: 'grayscale(1) contrast(1.2) opacity(0.4)' }} />

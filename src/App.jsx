@@ -5,8 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
-import WhatsAppButton from './components/Buttons/WhatsAppButton';
-import ScrollButton from './components/Buttons/ScrollButton';
+import OrderButton from './components/Buttons/OrderButton';
 
 //import stylesheets
 import './App.css'
@@ -25,8 +24,7 @@ const App = () => {
         </Routes>
         <Footer></Footer>
       </Router>
-      <WhatsAppButton />
-      <ScrollButton />  
+      <OrderButton />  
     </>
   )
 }

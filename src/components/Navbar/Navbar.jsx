@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { HashLink } from 'react-router-hash-link'
 import { Link } from 'react-router-dom'
 import { FaBars } from 'react-icons/fa'
 import { RxCross2 } from 'react-icons/rx'
@@ -27,14 +28,18 @@ const Navbar = () => {
       {/* menu for small screens */}
       <nav className='w-full bg-white fixed z-10 top-0 drop-shadow-lg text-right h-16 lg:hidden block'>
         <div className="flex flex-row justify-between">
-          <Link to='/'><h1 className='text-btb-blue font-bold text-3xl py-3 px-8'>Box<span className='text-btb-yellow font-semibold text-xl'>The</span>Bowls</h1></Link>
+          
+          <Link to='/' className='flex flex-row'>
+            <img src={logo} alt="" className=' aspect-auto w-14 mx-4' />
+            <h1 className='text-slate-900 font-bold text-3xl py-3'>Box<span className='text-btb-yellow font-semibold text-xl'>The</span>Bowls</h1>
+            </Link>
 
-          <button className='text-btb-yellow bg-btb-blue p-4' onClick={() => { setMenuToggle(!menuToggle); }}>
+          <button className='text-btb-yellow bg-slate-950 p-4' onClick={() => { setMenuToggle(!menuToggle); }}>
             <FaBars size={32} className={menuToggle === true ? 'hidden' : 'block'} />
           </button>
         </div>
         <div className={menuToggle === false ? 'hidden mobile-menu' : 'block mobile-menu'}>
-          <button className='text-btb-yellow bg-btb-blue p-4' onClick={() => { setMenuToggle(!menuToggle); }}>
+          <button className='text-btb-yellow bg-slate-950 p-4' onClick={() => { setMenuToggle(!menuToggle); }}>
             <RxCross2 size={32} className={menuToggle === false ? 'hidden' : 'block'} />
           </button>
           <Link to='/' onClick={() => {
@@ -51,35 +56,35 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to='/about'
+              <HashLink smooth to='/#about'
                 onClick={() => {
                   setLinkActive('about');
                   setMenuToggle(!menuToggle);
                 }} className={linkAcitve === 'about' ? 'active' : ''}>About us
-              </Link>
+              </HashLink>
             </li>
             <li>
               <a href='https://boxthebowls.dotpe.in/'
                 onClick={() => {
                   setLinkActive('menu');
                   setMenuToggle(!menuToggle);
-                }} className={linkAcitve === 'menu' ? 'active' : ''}>Menu
+                }} className={linkAcitve === 'menu' ? 'active' : ''}>Our Menu
               </a>
             </li>
             <li>
-              <Link to='/contact'
+              <HashLink smooth to='/#contact'
                 onClick={() => {
                   setLinkActive('contact');
                   setMenuToggle(!menuToggle);
                 }} className={linkAcitve === 'contact' ? 'active' : ''}>Contact us
-              </Link>
+              </HashLink>
             </li>
           </ul>
         </div>
       </nav>
 
       {/* menu for desktop screens */}
-      <nav className="bg-slate-50 hidden lg:block shadow-lg">
+      <nav className="bg-slate-50 hidden lg:block">
         <div className="flex justify-between max-w-6xl mx-auto">
           <p>&nbsp;</p>
           <ul>
@@ -89,13 +94,13 @@ const Navbar = () => {
             }} className={linkAcitve === '' ? 'active' : ''}>Home</Link>
             </li>
             <li>
-              <Link to='/about' onClick={() => { setLinkActive('about'); }} className={linkAcitve === 'about' ? 'active' : ''}>About us</Link>
+              <HashLink smooth to='/#about' onClick={() => { setLinkActive('about'); }} className={linkAcitve === 'about' ? 'active' : ''}>About us</HashLink>
             </li>
             <li>
-              <a href='https://boxthebowls.dotpe.in/' onClick={() => { setLinkActive('menu'); }} className={linkAcitve === 'menu' ? 'active' : ''}>Menu</a>
+              <a href='https://boxthebowls.dotpe.in/' onClick={() => { setLinkActive('menu'); }} className={linkAcitve === 'menu' ? 'active' : ''}>Our Menu</a>
             </li>
             <li>
-              <Link to='/contact' onClick={() => { setLinkActive('contact'); }} className={linkAcitve === 'contact' ? 'active' : ''}>Contact us</Link>
+              <HashLink smooth to='/#contact' onClick={() => { setLinkActive('contact'); }} className={linkAcitve === 'contact' ? 'active' : ''}>Contact us</HashLink>
             </li>
           </ul>
           <div className="py-2"><button className='bg-btb-yellow rounded-3xl  px-4 py-2 text-white font-semibold'>Order Now</button></div>

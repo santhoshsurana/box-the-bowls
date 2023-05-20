@@ -3,10 +3,10 @@ nav ul{
     @apply flex 
 }
 nav ul li a{
-    @apply  p-4 text-btb-blue font-semibold text-lg 
+    @apply  py-[0.7rem] px-4 text-slate-900 font-semibold text-lg 
 }
 nav ul li .active{
-    @apply border-b-4 border-btb-yellow
+    @apply border-b-8 border-btb-yellow
 }
 nav ul li {
     @apply p-4
