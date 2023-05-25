@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { HashLink } from 'react-router-hash-link'
 import { Link } from 'react-router-dom'
 import { FaBars } from 'react-icons/fa'
@@ -14,16 +14,7 @@ const Navbar = () => {
 
   const [linkAcitve, setLinkActive] = useState('');
   const [menuToggle, setMenuToggle] = useState(false);
-
-  const scrollToSection = (element) => { 
-    window.scrollTo({
-      top: element.current.offsetTop,
-      behavior: 'smooth',
-    })
-  }
-
-
-  return (
+return (
     <>
       {/* menu for small screens */}
       <nav className='w-full bg-white fixed z-10 top-0 drop-shadow-lg text-right h-16 lg:hidden block'>

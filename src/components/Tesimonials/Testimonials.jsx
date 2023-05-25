@@ -1,5 +1,3 @@
-import React from 'react'
-
 import image from '../../assets/images/Assets.xcassets/AppIcon.appiconset/50.png'
 //import stylesheets 
 import './testimonials.css'

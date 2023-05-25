@@ -1,30 +1,12 @@
-import React from "react";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-
-import { Autoplay, FreeMode } from "swiper";
 
 
-import { GiFullPizza, GiBowlOfRice, GiNoodles, GiChickenLeg, GiTacos, GiMeal } from 'react-icons/gi';
+
+import { GiFullPizza, GiBowlOfRice, GiChickenLeg, GiTacos, GiMeal } from 'react-icons/gi';
 import { TbMilkshake, TbSalad } from 'react-icons/tb';
 import { BiBowlRice } from 'react-icons/bi';
 
 
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/free-mode";
-
-
-
-// import image1 from '../../assets/images/image-1-min.webp'
-// import image2 from '../../assets/images/image-2-min.webp'
-// import image3 from '../../assets/images/image-3-min.webp'
-// import image4 from '../../assets/images/image-4-min.webp'
-// import image5 from '../../assets/images/image-5-min.webp'
-// import image6 from '../../assets/images/image-6-min.webp'
-// import image7 from '../../assets/images/image-7-min.webp'
-// import image9 from '../../assets/images/image-9-min.webp'
 
 //import stylesheets 
 import './menu.css'
